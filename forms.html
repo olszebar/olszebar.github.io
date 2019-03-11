@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Forms</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://static.thenounproject.com/png/25603-200.png">
+  </head>
+  <body>
+  <header>
+  </header>
+   <nav>
+      <a href="index.html">MENU</a>
+      <a href="lists.html">LISTS</a>
+      <a href="forms.html">FORMS</a>
+      <a href="tables.html">TABLES</a>
+      <a href="media.html">MEDIA</a>
+    </nav>
+   <h1>Forms</h1>
+     <h2>Text fields</h2>
+       <form action="http://google.pl">
+         <input type="button" onclick="alert('Fill the forms')" value="?"><br>
+         <fieldset>
+           <legend>Text input</legend>
+           First name:<br>
+           <input type="text" name="firstname" autocomplete="off" autofocus required><br>
+           Last name:<br>
+           <input type="text" name="lastname" autocomplete="on" required><br>
+           Password:<br>
+           <input type="password" name="psw" maxlength="20" ><br>
+           City:<br>
+           <input type="text" value="Wrocław" readonly><br>
+           Avatar:<br>
+           <input type="file" name="img" multiple>
+         </fieldset>
+         <fieldset>
+         <legend>Radio buttons</legend>
+           <label for="male">Male</label>
+           <input type="radio" id="male" name="gender" value="Man" checked>
+           <label for="female">Female</label>
+           <input type="radio" id="female" name="gender" value="Woman">
+           <label for="other">Other</label>
+           <input type="radio" id="other" name="gender" value="Other">
+           <label for="dontknow">I don't know</label>
+           <input type="radio" id="dontknow" name="gender" value="dontknow">
+         </fieldset>
+         <fieldset>
+         <legend>Checkboxes</legend>
+           <input type="checkbox" name="fruits" value="apple">Apple
+           <input type="checkbox" name="fruits" value="orange">Orange
+           <input type="checkbox" name="fruits" value="banana">Banana
+           <input type="checkbox" name="fruits" value="lemon">Lemon<br>
+           <input type="checkbox" name="fruits" value="strawberry">Strawberry
+           <input type="checkbox" name="fruits" value="rasberry">Rasberry
+           <input type="checkbox" name="fruits" value="plum">Plum
+           <input type="checkbox" name="fruits" value="watermelon">Watermelon
+         </fieldset>
+         <fieldset>
+         <legend>Color picker</legend>
+           <input type="color" name="favcolor">
+         </fieldset>
+         <fieldset>
+         <legend>Date</legend>
+           <input type="date" name="bday" max="2000-12-31" min="1900-12-31">
+         </fieldset>
+         <fieldset>
+         <legend>Email</legend>
+           <input type="email" name="email"><br>
+           Second email:<br>
+           <input type="email" name="email2" value="Second email adress" maxlength="30" size="40" disabled>
+         </fieldset>
+         <fieldset>
+           <legend>Favorite browser</legend>
+           <select>
+             <option value="ie">Internet Explorer</option>
+             <option value="firefox">Firefox</option>
+             <option value="chrome">Chrome</option>
+             <option value="opera" selected>Opera</option>
+             <option value="safari">Safari</option>
+           </select>
+         </fieldset>
+        <hr>
+        <button type="submit" value="Submit">Submit</button>
+        <input type="reset" name="reset" value="Clear">
+        <input type="submit" formaction="/some_page.php" value="Submit as admin" formtarget="_blank">
+      </form>
+  </body>
+</html>
