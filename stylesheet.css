@@ -452,4 +452,11 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+}
+  @media all and (min-width:900px) {
+  .portfolio {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
