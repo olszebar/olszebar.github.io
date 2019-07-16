@@ -89,8 +89,6 @@ body {
   background-color: orange;
 }
 
-main {
-}
 
 .portfolio {
   background-color: #f8f9fa;
@@ -437,18 +435,168 @@ main {
   display: none;
 }
 
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 48px 0px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.sponsors img {
+  height: auto;
+  width: auto;
+}
+
+.contact_welcome {
+  margin-bottom: 65px;
+}
+
+.contact_welcome h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+
+.contact_welcome p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Droid Serif;
+  font-style: italic;
+  color: dimgrey;
+}
+
+.contact_section {
+  background-image: url(img/Untitled.png);
+  height: 500px;
+  padding: 100px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.85;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_data input {
+  height: 24px;
+  width: 498px;
+  padding: 20px;
+  margin: 12.5px;
+  border-style: solid;
+  border-color: darkgray;
+  border-radius: .25rem;
+  border-width: 1px;
+  font-weight: bold;
+  font-size: 18px;
+  color: darkgray;
+}
+
+::placeholder {
+  color: darkgray;
+}
+
+#message {
+  height: 196px;
+  width: 498px;
+  padding: 25px;
+  margin: 12px 12.5px 25px;
+  border-style: solid;
+  border-color: darkgray;
+  font-weight: bold;
+  font-size: 18px;
+  color: darkgray;
+  border-radius: .25rem;
+  border-width: 1px;
+}
+
+.send_message_button {
+  padding: 20px 40px;
+  border-radius: .25rem;
+  border-style: solid;
+  border-color: darkgray;
+  border-width: 1px;
+  background-color: #ffbf00;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.send_message_button:hover {
+  background: orange;
+}
+
 @media all and (min-width:500px) and (max-width:830px) {
+  
+  .about_points_reverse, .about_points{
+    justify-content: flex-start;
+  }
+  .about {
+    background-size: 3px 1000px;
+  }
+}
+@media all and (max-width:830px) {
   .about_point_title_reverse {
     right: 0px;
     left: 200px;
     text-align: left;
   }
   .about_points_reverse, .about_points{
-    justify-content: flex-start;
+    justify-content;
   }
   .about {
-    
-  background-position: 80px;
+  margin-left: 100px;
+  background-position: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+    .about_points img, .about_points_reverse img {
+    background-color: #fed136;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 3px;
+    position: relative;
+  }
+  
+  .about_point_title_reverse {
+    position: absolute;
+    left: 100px;
+  }
+  
+   .about_point_title {
+    position: absolute;
+    left: 100px;
+  }
+  
+  .last_element {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+    font-size: 16px;
   }
 }
 
@@ -470,5 +618,60 @@ main {
   .portfolio {
     padding-left: 200px;
     padding-right: 200px;
+  }
+}
+
+  @media all and (min-width:790px) and (max-width:990px) {
+    .sponsors {
+    }
+    .sponsors img {
+      width: 150px;
+      height: 37px;
+    }
+        .user_data input {
+      width: 288px;
+}
+    #message {    
+      width: 288px;
+    }
+}
+
+  @media all and (min-width:575px) and (max-width:790px) {
+    .sponsors {
+      margin: 0px 81px;
+    }
+}
+
+  @media all (max-width:775px) {
+    .sponsors {
+      margin: 0px 200px;
+    }   
+}
+
+  @media all and (max-width:1200px) and (min-width:990px) {
+    .user_data input {
+      width: 408px;
+}
+
+    #message {    
+      width: 408px;
+    }     
+}
+
+@media all and (max-width:789px) {
+  .contact_form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact_section {
+  background-image: url(img/Untitled.png);
+  height: 772px;
+  background-position: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  padding: 100px 0px;
+  color: white;
+  opacity: 0.85;
   }
 }
