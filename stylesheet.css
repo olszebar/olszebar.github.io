@@ -366,7 +366,7 @@ body {
   justify-content: space-around;
 }
 
-.social div {
+.social div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,7 +386,7 @@ body {
   border-radius: 50%;
 }
 
-.social_icon {
+.social_icon{
   width: 26.1px;
   height:26.1px;
 }
@@ -545,6 +545,37 @@ form {
   background: orange;
 }
 
+footer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social div {
+  margin: 10px;
+}
+
+footer div p, .footer_links {
+  margin: 25px;
+  color: black;
+  font-family: Droid Serif;
+}
+
+.footer_links a {
+  text-decoration: none;
+  color: #ffbf00;
+  font-family: Droid Serif;
+  padding: 0px 10px;
+}
+
 @media all and (min-width:500px) and (max-width:830px) {
   
   .about_points_reverse, .about_points{
@@ -613,6 +644,8 @@ form {
     display: flex;
     justify-content: center;
   }
+  
+  .menu_button:
 }
   @media all and (min-width:900px) {
   .portfolio {
@@ -674,4 +707,32 @@ form {
   color: white;
   opacity: 0.85;
   }
+  
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer div p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  
+  footer .social {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  footer .footer_links{
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+    footer .footer_links a{
+      padding: 0px 10px;
+  }
+  
 }
